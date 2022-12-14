@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply font-Poppins 
+    }
+    body {
+        @apply bg-sky
+    }
+    h1 {
+        @apply font-Poppins font-bold text-30 lg:text-55 leading-40 lg:leading-60 text-center text-white uppercase px-20
+    }
+    h2 {
+        @apply font-Poppins font-bold text-20 lg:text-30 leading-35 lg:leading-45 
+    }
+    p {
+        @apply font-Raleway font-normal text-14 leading-20 text-blue pt-3
+    }
+    header {
+        @apply font-Poppins font-bold text-14 leading-21
+    }
+}
+@layer components {
+    .container-fluid {
+        @apply px-20 lg:px-80
+    }
+    .container-xl {
+        @apply px-20 lg:px-50
+    }
+    .btn-transparent {
+        @apply px-31 py-3 font-bold bg-transparent rounded-100 border border-white text-white hover:border-green hover:bg-green hover:text-white 
+    }
+    .btn-green {
+        @apply px-31 py-3 bg-green font-bold rounded-100 border border-transparent text-white hover:border-blue hover:bg-white hover:text-blue
+    }
+    .circle {
+        @apply bg-powderBlue h-163 w-163 px-50 pt-9 pb-16 rounded-full bg-opacity-20
+    }
+    .title {
+        @apply font-Poppins font-bold text-base lg:text-21 lg:leading-32 text-white
+    }
+   /* .hover-underline-animation {
+        @apply inline-block relative text-blue
+    }
+    .hover-underline-animation:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #202A3F;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    .hover-underline-animation:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }  */
+    .logo {
+        @apply py-15 duration-500 max-w-150 lg:max-w-207
+    }
+}
+
+@layer utilities {
+    .banner .banner-info {
+        @apply absolute top-40per left-0 right-0
+    }
+    .navigation ul li {
+        @apply hover:text-green cursor-pointer
+    }
+    .circle h3 {
+        @apply font-Poppins font-bold text-10 leading-15 text-blue text-center
+    }
+    .custom-btn span {
+        @apply text-green font-Poppins font-bold text-12 leading-18
+    }
+    .description {
+        @apply pb-9
+    }
+    .discover-grid .grid-image,.discover-grid .grid-image {
+        @apply pt-[64.52%] relative w-full inline-block align-top overflow-hidden
+    }
+    .discover-grid .grid-image img,.discover-grid .grid-image img {
+        @apply inset-0 block h-full w-full object-cover absolute
+    }
+
+    .info-slider .swiper-button-next:after,.info-slider .swiper-button-prev:after {
+        content: ''!important;
+    }
+    @media (min-width:1280px) {
+        .info-slider .swiper-button-next,.info-slider .swiper-button-prev {
+            width: calc(var(--swiper-navigation-size)/ 16 * 27);
+            top: 40%;
+        }
+    }
+    @media (max-width:1279px) {
+        .info-slider .swiper-button-next,.info-slider .swiper-button-prev {
+            width: calc(var(--swiper-navigation-size)/ 27 * 27);
+            top: 35%;
+        }
+    }
+    .info-slider .swiper-button-prev{
+        @apply left-[0.5%] lg:left-[4%] xl:left-[2%]
+    } 
+    .info-slider .swiper-button-next {
+        @apply right-[0.5%]  lg:right-[4%] xl:right-[2%]
+    }
+    .info-slider .slide-content p {
+        @apply pt-7px pb-17
+    }
+    .info-slider .swiper-image {
+        @apply pt-[99.5%] relative w-full inline-block align-top overflow-hidden
+    }
+    .info-slider .swiper-image img {
+        @apply inset-0 block h-full w-full object-cover absolute
+    }
+
+    .feedback-blue .fb-image {
+        @apply pt-[63.43%] w-full relative object-cover inline-block align-top overflow-hidden
+    }
+    .feedback-blue .fb-image img {
+        @apply inset-0 block h-full w-full object-cover absolute
+    } 
+
+    .feedback .swiper-pagination-bullets.swiper-pagination-horizontal {
+        @apply bottom-[-43px]
+    }
+    .feedback .swiper-pagination-bullet-active {
+        @apply !bg-green
+    }
+    .feedback .swiper-pagination-bullet {
+        @apply bg-white opacity-[1]
+    }
+    .feedback .swiper-pagination {
+        @apply text-left
+    }
+
+    .footer-logo img, footer .social-icons, footer ul li, .adventure-inner a img {
+        @apply cursor-pointer
+    }
+    footer .social-icons ul a,  {
+        @apply hover:-translate-y-2 px-1 transition-all duration-700
+    }
+    footer ul li a,  {
+        @apply hover:text-green
+    }
+    footer .page-navigation ul span, .footer-copyright-menu ul span{
+        @apply lgscreen:hidden
+    }
+    footer .footer-copyright-menu ul {
+        @apply mdscreen:text-center  mdscreen:space-y-2 md:space-x-2 font-Poppins items-center text-black
+    }
+
+    /* menu */
+    .offcanvas-body .menu-left ul li {
+        @apply pt-20 md:pt-27 hover:text-green font-Poppins font-bold text-30 leading-45 align-top text-blue cursor-pointer
+    }
+    .offcanvas-body .menu-right ul li {
+        @apply pt-10px md:pt-20 font-Poppins font-normal text-18 leading-27 align-top text-blue hover:text-green cursor-pointer
+    }
+
+}
+
+

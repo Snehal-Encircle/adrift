@@ -1,0 +1,737 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./src/images/favicon.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>adrift</title>
+</head>
+
+<body asscroll-container>
+  <header>
+    <div class="container-xl">
+      <div class="header-content flex justify-between items-center">
+        <div class="logo cursor-pointer">
+          <a href="#">
+            <img src="../src/images/logo.svg" alt="" />
+          </a>
+        </div>
+        <nav class="navigation flex space-x-11">
+          <ul class="hidden lg:flex items-center space-x-7">
+            <li><a href="#">Activities</a></li>
+            <li><a href="#">Accommodation</a></li>
+            <li><a href="#">Packages</a></li>
+          </ul>
+          <div class="btns flex space-x-7">
+            <a href="#">
+              <button class="btn-green hidden lg:block ">
+                Book An Activity
+              </button>
+            </a>
+            <div class="hemburgur flex items-center cursor-pointer">
+              <img src="../src/images/menu.svg" alt="" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" />
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- menu -->
+  <div
+    class="offcanvas offcanvas-end fixed bottom-0 flex flex-col max-w-full bg-white invisible bg-clip-padding shadow-sm outline-none transition duration-1000 ease-in-out text-gray-700 top-0 right-0 border-none w-full"
+    tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header flex items-center justify-between container-xl">
+      <div class="offcanvas-title mb-0 leading-normal font-semibold" id="offcanvasRightLabel">
+        <div class="logo py-15 duration-500 max-w-[150px] lg:max-w-[207px] cursor-pointer">
+          <a href="#">
+            <img src="../src/images/logo.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="flex lg:space-x-10 items-center">
+        <a href="#">
+          <div
+            class="hidden lg:block cursor-pointer text-blue hover:text-green font-Poppins font-medium text-15 leading-20">
+            Get In Touch
+          </div>
+        </a>
+        <a href="#">
+          <button class="btn-green hidden lg:block">
+            Book An Activity
+          </button>
+        </a>
+        <div type="button"
+          class="btn-close box-content cursor-pointer w-5 lg:w-6 h-5 lg:h-6 border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+          data-bs-dismiss="offcanvas" aria-label="Close">
+          <img src="../src/images/close.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas-body relative flex-grow pt-30 lg:pt-163 overflow-y-auto">
+      <div class="menu">
+        <div class="container-fluid">
+          <div class="md:flex mdscreen:text-center">
+            <div class="lg:w-6/12 w-full xlscreen:flex xlscreen:justify-center">
+              <div class="menu-left xl:flex justify-around">
+                <ul>
+                  <li><a href="#">Activities</a> </li>
+                  <li><a href="#">Accommodation</a> </li>
+                  <li><a href="#">Packages</a> </li>
+                </ul>
+                <ul>
+                  <li><a href="#">About</a> </li>
+                  <li><a href="#">Meet The Team</a></li>
+                  <li><a href="#">Location</a> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lg:w-6/12 w-full xlscreen:flex xlscreen:justify-center mt-5 inline-grid items-center">
+              <div class="menu-right xl:flex justify-evenly">
+                <ul class="font-Poppins font-normal text-18 leading-27 text-blue hover:text-green">
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Gallery</a></li>
+                </ul>
+                <ul>
+                  <li></li>
+                  <li><a href="#">FAQ’s</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="adventure-scope bg-sky mt-50 xl:absolute right-0 left-0 bottom-0">
+          <div class="container-fluid py-50">
+            <div class="next-adventure">
+              <div class="adventure-inner flex flex-wrap justify-around gap-5">
+                <a href="#"><img src="../src/images/rafting-img.png" alt="rafting"
+                    class="aspect-square w-163 object-cover" /></a>
+                <a href="#"><img src="../src/images/bugging-img.png" alt="bugging"
+                    class="aspect-square w-163 object-cover" /></a>
+                <a href="#"><img src="../src/images/bjumping.png" alt="bjumping"
+                    class="aspect-square w-163 object-cover" /></a>
+                <a href="#"><img src="../src/images/Kayaking-img.png" alt="Kayaking"
+                    class="aspect-square w-163 object-cover" /></a>
+                <a href="#"><img src="../src/images/hourse.png" alt="hourse"
+                    class="aspect-square w-163 object-cover" /></a>
+                <a href="#"><img src="../src/images/biking-img.png" alt="biking"
+                    class="aspect-square w-163 object-cover" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class='banner h-screen relative'>
+    <div class="banner-img h-screen" style="background-image:url('../src/images/banner.png')">
+      <video autoplay="" loop="" muted="" class="banner-video h-screen object-cover w-full"
+        poster="../src/images/banner.png">
+        <source src="../src/images/banner-video.mp4" type="video/mp4">
+      </video>
+      <div class='banner-info z-50' id="innerData">
+        <h1>The ultimate Ugandan adventure </h1>
+        <div class="smscreen:flex-col items-center flex justify-center pt-20 lg:pt-27">
+          <a href="#">
+            <button class='btn-transparent'>
+              Explore All Activities
+            </button>
+          </a>
+          <button class="playiocn flex">
+            <img src="../src/images/playbtn.svg" alt="playbutton " class="p-3" />
+            <span class="my-auto font-Poppins text-white font-bold">Watch Video</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="next-adventure py-30 lg:py-70 bg-sky">
+    <div class="container-fluid mt-70" id="fade">
+      <h2 class="text-center pb-20 lg:pb-50" id="innerData">Choose your next adventure activity</h2>
+      <div class="adventure-inner flex flex-wrap justify-around gap-5" id="innerData">
+        <div class="circle">
+          <a href="#">
+            <img src="../src/images/rafting.png" alt="Rafting" class="pb-15 aspect-square" />
+            <h3 class="pb-34">Rafting</h3>
+          </a>
+        </div>
+        <div class="circle">
+          <a href="#">
+            <img src="../src/images/bugging.png" alt="bugging" class="pb-15 aspect-square" />
+            <h3 class="pb-34">River Bugging</h3>
+          </a>
+        </div>
+        <div class="circle">
+          <a href="#">
+            <img src="../src/images/bungee.png" alt="bugging" class="pb-15 aspect-square" />
+            <h3 class="pb-34">Bungee Jumping</h3>
+          </a>
+        </div>
+        <div class="circle">
+          <a href="#">
+            <img src="../src/images/Kayaking.png" alt="Rafting" class="pb-15 aspect-square" />
+            <h3 class="pb-34">Kayaking</h3>
+          </a>
+        </div>
+        <div class="circle">
+          <a href="#">
+            <img src="../src/images/hourceRiding.png" alt="Rafting" class="pb-15 aspect-square" />
+            <h3 class="pb-34">Horse Riding</h3>
+          </a>
+        </div>
+        <div class="circle">
+          <a href="#">
+            <img src="../src/images/Quadbiking.png" alt="Rafting" class="pb-15 aspect-square" />
+            <h3 class="pb-34">Quad Biking</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="zigzag py-30 lg:py-70 bg-sky">
+    <div class="container-fluid">
+      <div class="flex flex-wrap items-center justify-center lg:mb-70">
+        <div class="w-full lg:w-6/12">
+          <div class="zigzag-image pt-[88.89%] relative w-full" id="innerData">
+            <img src="../src/images/Nile.png" alt="" class="inset-0 block h-full w-full object-cover absolute" />
+          </div>
+        </div>
+        <div class="w-full lg:w-6/12 z-[9999]">
+          <div class="zigzag-inner bg-white lgscreen:-mt-41 lg:-ml-41 rounded-15 drop-shadow-lg">
+            <div class="zigzag-content p-20 lg:p-80" id="innerData">
+              <div class="content-title">
+                <h2>Start your adventure on the River Nile, Uganda</h2>
+              </div>
+              <div class="description">
+                <p>Habitant morbi tristique senectus et netus et malesuada fames. Scelerisque felis imperdiet proin
+                  fermentum leo vel orci porta. Tincidunt arcu non sodales neque sodales ut etiam. Sit amet facilisis
+                  magna etiam tempor orci eu. Gravida in fermentum et sollicitudin ac. Eget aliquet nibh praesent
+                  tristique magna sit. Quisque egestas diam in arcu. Vivamus at augue eget arcu dictum varius duis at.
+                </p>
+              </div>
+              <a href="#">
+                <div
+                  class="button flex py-1 hover:bg-green hover:text-white text-green hover:rounded-500 w-fit after:hover:duration-500 after:hover:origin-bottom-right rounded-500">
+                  <img src="../src/images/explore.svg" alt=""
+                    class="bg-green p-[10px] rounded-full w-[27px] h-[27px] flex items-center" />
+                  <span
+                    class="pl-3 pr-21 borx font-Poppins font-bold text-xs leading-18 flex items-center rounded">Explore
+                    Our Location
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="discover py-30 lg:py-70 bg-blue">
+    <div class="container-fluid">
+      <div class="discover-header my-30 lg:my-70" id="innerData">
+        <h2 class="text-white text-center">Discover your perfect adventure</h2>
+        <p class="text-center max-w-[530px] text-white mx-auto pt-15">Habitant morbi
+          tristique
+          senectus et netus et malesuada fames. Scelerisque felis imperdiet proin fermentum leo
+          vel orci porta.
+        </p>
+        <a href="#">
+          <button class="btn-transparent mt-6 flex mx-auto">Explore All Activities</button>
+        </a>
+      </div>
+      <div class="discover-grid">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 mb-30 lg:mb-70">
+          <div class="grid-1" id="innerData">
+            <div class="grid-image">
+              <img src="../src/images/water.png" alt="" />
+            </div>
+            <div class="image-content flex justify-between pt-4 lg:pt-8">
+              <div class="img-title">
+                <h3 class="title">Water Based Activities</h3>
+              </div>
+              <a href="#">
+                <div
+                  class="button flex hover:bg-green after:hover:duration-500 after:hover:origin-bottom-right rounded-500">
+                  <img src="../src/images/explore-arrow.svg" alt=""
+                    class="bg-white p-[10px] rounded-full w-[27px] h-[27px] flex items-center m-auto" />
+                  <span
+                    class="pl-3 pr-21 borx text-white font-Poppins font-bold text-xs leading-18 flex items-center rounded">Explore</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="grid-2" id="innerData">
+            <div class="grid-image">
+              <img src="../src/images/land.png" alt="" />
+            </div>
+            <div class="image-content flex justify-between pt-4 lg:pt-8">
+              <div class="img-title">
+                <h3 class="title">Land Based Activities</h3>
+              </div>
+              <a href="#">
+                <div
+                  class="button flex hover:bg-green after:hover:duration-500 after:hover:origin-bottom-right rounded-500">
+                  <img src="../src/images/explore-arrow.svg" alt=""
+                    class="bg-white p-[10px] rounded-full w-[27px] h-[27px] flex items-center m-auto" />
+                  <span
+                    class="pl-3 pr-21 borx text-white font-Poppins font-bold text-xs leading-18 flex items-center rounded">Explore</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="zigzag py-30 lg:py-70 bg-sky">
+    <div class="container-fluid">
+      <div class="flex flex-wrap items-center justify-center mt-30 lg:mt-70">
+        <div class="lg:w-6/12 w-full lg:order-2" id="innerData">
+          <div class="zigzag-image pt-[88.89%] relative w-full">
+            <img src="../src/images/service.png" alt="" class=" inset-0 block h-full w-full object-cover absolute" />
+          </div>
+        </div>
+        <div class="lg:w-6/12 w-full z-[9999] shadow-inner">
+          <div class="zigzag-inner bg-white lgscreen:-mt-41 lg:-mr-41 rounded-15 drop-shadow-lg">
+            <div class="zigzag-content p-20 lg:p-80" id="innerData">
+              <div class="content-title">
+                <h2>Over 30 years of exceptional service and adventures</h2>
+              </div>
+              <div class="description">
+                <p>
+                  Scelerisque felis imperdiet proin fermentum leo vel orci porta. Tincidunt arcu non sodales neque
+                  sodales ut etiam. Sit amet facilisis magna etiam tempor orci eu. Gravida in fermentum et sollicitudin
+                  ac. Eget aliquet nibh praesent tristique magna sit. Quisque egestas diam in arcu. Vivamus at augue
+                  eget arcu dictum varius duis at.
+                </p>
+              </div>
+              <a href="#">
+                <div
+                  class="button flex py-1 hover:bg-green hover:text-white text-green hover:rounded-500 w-fit after:hover:duration-500 after:hover:origin-bottom-right rounded-500">
+                  <img src="../src/images/explore.svg" alt=""
+                    class="bg-green p-[10px] rounded-full w-[27px] h-[27px] flex items-center" />
+                  <span class="pl-3 pr-21 borx font-Poppins font-bold text-xs leading-18 flex items-center rounded">
+                    Explore Our Story
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="zigzag py-30 lg:py-70 lg:mb-70 bg-sky">
+    <div class="container-fluid">
+      <div class="flex flex-wrap items-center justify-center">
+        <div class="w-full lg:w-6/12">
+          <div class="zigzag-image pt-[88.89%] relative w-full" id="innerData">
+            <img src="../src/images/accomomdaton.png" alt=""
+              class=" inset-0 block h-full w-full object-cover absolute" />
+          </div>
+        </div>
+        <div class="w-full lg:w-6/12 z-[9999]">
+          <div class="zigzag-inner bg-white lgscreen:-mt-41 lg:-ml-41 rounded-15 drop-shadow-lg">
+            <div class="zigzag-content p-20 lg:p-80" id="innerData">
+              <div class="content-title">
+                <h2>Discover our multiple accomomdaton options</h2>
+              </div>
+              <div class="description">
+                <p>
+                  Habitant morbi tristique senectus et netus et malesuada fames. Scelerisque felis imperdiet proin
+                  fermentum leo vel orci porta. Tincidunt arcu non sodales neque sodales ut etiam. Sit amet facilisis
+                  magna etiam tempor orci eu. Gravida in fermentum et sollicitudin ac. Eget aliquet nibh praesent
+                  tristique magna sit. Quisque egestas diam in arcu. Vivamus at augue eget arcu dictum varius duis at.
+                </p>
+              </div>
+              <a href="#">
+                <div
+                  class="button flex py-1 hover:bg-green hover:text-white text-green hover:rounded-500 w-fit after:hover:duration-500 after:hover:origin-bottom-right rounded-500">
+                  <img src="../src/images/explore.svg" alt=""
+                    class="bg-green p-[10px] rounded-full w-[27px] h-[27px] flex items-center" />
+                  <span class="pl-3 pr-21 borx font-Poppins font-bold text-12 leading-18 flex items-center rounded">
+                    Explore Accommodation
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="own pb-30 lg:pb-70 bg-white">
+    <div class="relative">
+      <img src="../src/images/own.png" alt="" class="h-631 object-cover w-full" />
+      <div class="absolute top-1/2 bottom-1/2 left-0 right-0" id="innerData">
+        <h2 class="text-center text-white uppercase text-20 leading-6 lg:text-40 lg:leading-60">Choose your own
+          adventure</h2>
+        <a href="#">
+          <button class="btn-green flex mx-auto mt-3">Book An Activity</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="info-slider bg-white py-30 lg:py-70" id="innerData">
+    <div class="relative lg:mb-70">
+      <div class="container-fluid">
+        <div class="swiper info-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-image">
+                <img src="../src/images/team.png" alt="" />
+              </div>
+              <div class="slide-content pt-7">
+                <h2>Meet The Team</h2>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                  laborum.</p>
+                <a href="#">
+                  <div
+                    class="button flex py-1 hover:bg-green hover:text-white text-green hover:rounded-500 w-fitx after:hover:origin-bottom-right rounded-500">
+                    <img src="../src/images/explore.svg" alt=""
+                      class="bg-green p-[10px] rounded-full w-[27px] h-[27px] flex items-center" />
+                    <span class="pl-3 pr-21 borx font-Poppins font-bold text-12 leading-18 flex items-center rounded">
+                      Explore
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-image">
+                <img src="../src/images/package.png" alt="" />
+              </div>
+              <div class="slide-content pt-7">
+                <h2>Our Packages</h2>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                  laborum.</p>
+                <a href="#">
+                  <div
+                    class="button flex py-1 hover:bg-green hover:text-white text-green hover:rounded-500 w-fit after:hover:duration-500 after:hover:origin-bottom-right rounded-500">
+                    <img src="../src/images/explore.svg" alt=""
+                      class="bg-green p-[10px] rounded-full w-[27px] h-[27px] flex items-center" />
+                    <span class="pl-3 pr-21 borx font-Poppins font-bold text-12 leading-18 flex items-center rounded">
+                      Explore
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-image">
+                <img src="../src/images/blog.png" alt="" />
+              </div>
+              <div class="slide-content pt-7">
+                <h2>Our Blog</h2>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                  laborum.</p>
+                <a href="#">
+                  <div
+                    class="button flex py-1 hover:bg-green hover:text-white text-green hover:rounded-500 w-fit after:hover:duration-500 after:hover:origin-bottom-right rounded-500">
+                    <img src="../src/images/explore.svg" alt=""
+                      class="bg-green p-[10px] rounded-full w-[27px] h-[27px] flex items-center" />
+                    <span class="pl-3 pr-21 borx font-Poppins font-bold text-12 leading-18 flex items-center rounded">
+                      Explore
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-arrows">
+        <div class="swiper-button-next">
+          <img src="../src/images/swiper-arrow.png" alt="" class="rotate-180" />
+        </div>
+        <div class="swiper-button-prev">
+          <img src="../src/images/swiper-arrow.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="feedback  py-30 lg:py-70 bg-blue">
+    <div class="feedback-blue my-30 lg:my-70">
+      <div class="container-fluid lg:pr-0">
+        <div class="fb-tittle pb-5 lg:pb-9 text-white" id="innerData">
+          <h2>Discover what our guests had to say</h2>
+        </div>
+        <div class="flex flex-wrap items-center">
+          <div class="lg:w-6/12 w-full" id="innerData">
+            <div class="fb-image">
+              <img src="../src/images/guestfb.png" alt="" />
+            </div>
+          </div>
+          <div class="lg:w-6/12 w-full lg:px-75 xl:px-150" id="innerData">
+            <div class="relative">
+              <div class="swiper guest">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="fb-content text-white lgscreen:pt-20">
+                      <h4 class="font-Poppins font-bold text-15 leading-23">Whitewater the Nile - DO IT. Excellent
+                        adventure
+                      </h4>
+                      <p class="text-white">My wife and I did a whitewater trip on the Nile with this group and had a
+                        great
+                        time. We kept it to class
+                        3 and 4 rapids (there are 5's and 6's on the river). Staff did a great job briefing, and there
+                        were 3
+                        kayaks in the water along with our boat and another boat. Very experienced team, and we felt
+                        comfortable
+                        because of their skills and expertise
+                      </p>
+                      <div class="guest-name flex pt-10px lg:pt-19 xl:pt-29 items-center">
+                        <img src="../src/images/adisor.svg" alt="" />
+                        <p class="text-white text-10 leading-15 pt-0 pl-2"><b class="font-Raleway">Philip G</b>
+                          Aspen,Colorado
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fb-content text-white lgscreen:pt-20">
+                      <h4 class="font-Poppins font-bold text-15 leading-23">Whitewater the Nile - DO IT. Excellent
+                        adventure
+                      </h4>
+                      <p class="text-white">My wife and I did a whitewater trip on the Nile with this group and had a
+                        great
+                        time. We kept it to class
+                        3 and 4 rapids (there are 5's and 6's on the river). Staff did a great job briefing, and there
+                        were 3
+                        kayaks in the water along with our boat and another boat. Very experienced team, and we felt
+                        comfortable
+                        because of their skills and expertise
+                      </p>
+                      <div class="guest-name flex pt-10px lg:pt-29 items-center">
+                        <img src="../src/images/adisor.svg" alt="" />
+                        <p class="text-white text-10 leading-15 pt-0 pl-2"><b class="font-Raleway">Philip G</b>
+                          Aspen,Colorado
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fb-content text-white lgscreen:pt-20">
+                      <h4 class="font-Poppins font-bold text-15 leading-23">Whitewater the Nile - DO IT. Excellent
+                        adventure
+                      </h4>
+                      <p class="text-white">My wife and I did a whitewater trip on the Nile with this group and had a
+                        great
+                        time. We kept it to class
+                        3 and 4 rapids (there are 5's and 6's on the river). Staff did a great job briefing, and there
+                        were 3
+                        kayaks in the water along with our boat and another boat. Very experienced team, and we felt
+                        comfortable
+                        because of their skills and expertise
+                      </p>
+                      <div class="guest-name flex pt-10px lg:pt-29 items-center">
+                        <img src="../src/images/adisor.svg" alt="" />
+                        <p class="text-white text-10 leading-15 pt-0 pl-2"><b class="font-Raleway">Philip G</b>
+                          Aspen,Colorado
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fb-content text-white lgscreen:pt-20">
+                      <h4 class="font-Poppins font-bold text-15 leading-23">Whitewater the Nile - DO IT. Excellent
+                        adventure
+                      </h4>
+                      <p class="text-white">My wife and I did a whitewater trip on the Nile with this group and had a
+                        great
+                        time. We kept it to class
+                        3 and 4 rapids (there are 5's and 6's on the river). Staff did a great job briefing, and there
+                        were 3
+                        kayaks in the water along with our boat and another boat. Very experienced team, and we felt
+                        comfortable
+                        because of their skills and expertise
+                      </p>
+                      <div class="guest-name flex pt-10px lg:pt-29 items-center">
+                        <img src="../src/images/adisor.svg" alt="" />
+                        <p class="text-white text-10 leading-15 pt-0 pl-2"><b class="font-Raleway">Philip G</b>
+                          Aspen,Colorado
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-pagination">
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="newsletter-form py-25 lg:py-50">
+      <div class="container-fluid">
+        <div class="new-form-inner xl:flex">
+          <div class="form-title xl:w-5/12 w-full" id="innerData">
+            <h3 class="font-Poppins font-bold xlscreen:mx-auto text-20 leading-30 text-midblue max-w-[436px]">Sign up to
+              hear about the
+              latest deals and all the activity news on the River Nile
+            </h3>
+          </div>
+          <div class="fields xl:w-7/12 w-full" id="innerData">
+            <form action="#" class="lg:flex justify-center xlscreen:pt-25 xl:justify-end">
+              <div class="name">
+                <input type="text" placeholder="Name & Surname"
+                  class="font-Raleway capitalize font-normal text-11 leading-13 text-left text-midblue w-full bg-transparent border-b border-blue border-opacity-40 lg:w-258 focus-within:border-opacity-[1] pb-3 text-opacity-[1] lg:mr-12 focus:outline-none">
+              </div>
+              <div class="email">
+                <input type="email" placeholder="Email Address"
+                  class="font-Raleway font-normal text-11 leading-13 text-left lgscreen:my-22 text-midblue w-full bg-transparent border-b border-blue border-opacity-40 lg:w-258 focus-within:border-opacity-[1] pb-3 text-opacity-[1] lg:mr-12 focus:outline-none">
+              </div>
+              <div class="submit-btn">
+                <button
+                  class="py-3 px-30 border rounded-100 border-midblue text-midblue font-Poppins font-bold text-14 leading-21 hover:bg-green hover:text-white hover:border-transparent">
+                  Sign Up
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-b border-midblue border-opacity-20"></div>
+    <div class="footer-nav py-33">
+      <div class="container mx-auto">
+        <div class="page-navigation">
+          <ul
+            class="md:flex mdscreen:space-y-3 max-w-[851px] tracking-[0.24px] mx-auto mdscreen:text-center justify-evenly font-Poppins font-bold text-20 leading-30 text-blue" id="innerData">
+            <li><a href="#">Activities</a></li><span>|</span>
+            <li><a href="#">About</a></li><span>|</span>
+            <li><a href="#">Accommodation</a></li><span>|</span>
+            <li><a href="#">Location</a></li><span>|</span>
+            <li><a href="#">Packages</a></li>
+          </ul>
+        </div>
+        <div class="footer-logo flex flex-wrap justify-center py-30 lg:pt-58 lg:pb-91" id="innerData">
+          <a href="#"> <img src="../src/images/logo.svg" alt="" /></a>
+        </div>
+        <div class="nav-list">
+          <ul
+            class="md:flex items-center mdscreen:text-center justify-center mdscreen:space-y-3 md:space-x-14 font-Poppins font-normal text-base leading-6 text-blue" id="innerData">
+            <li><a href="#">Meet The Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">FAQ’s</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="button" id="innerData">
+          <a href="#"><button class="btn-green flex flex-wrap mx-auto mt-22 md:mt-44">Book An Activity</button></a>
+        </div>
+        <div class="contact-info text-center py-25 lg:py-75 font-Poppins" id="innerData">
+          <div class="contact">info@adrift.ug | +256 (0) 752 225587</div>
+          <div class="place">Jinja, Uganda</div>
+        </div>
+      </div>
+      <div class="footer-copyrights border-t border-midblue border-opacity-20 !px-0">
+        <div class="container-fluid">
+          <div class="md:flex md:justify-between pt-10px lg:pt-30">
+            <div class="logo mdscreen:mx-auto py-0">
+              <a href="#">
+                <img src="../src/images/lemala.png" alt="" />
+              </a>
+            </div>
+            <div class="footer-copyright-menu md:flex">
+              <ul class="md:flex justify-center">
+                <li><a href="#">Terms & Conditions</a></li><span>|</span>
+                <li><a href="#">Privacy Policy</a></li><span>|</span>
+                <li class="cursor-default"><a href="#">Covid-19</a></li>
+              </ul>
+            </div>
+            <div class="social-icons flex items-center">
+              <ul class="flex mdscreen:mx-auto mdscreen:pt-15">
+                <a href="#">
+                  <li><img src="../src/images/Instagram.svg" alt=""></li>
+                </a>
+                <a href="#">
+                  <li><img src="../src/images/Facebook.svg" alt=""></li>
+                </a>
+                <a href="#">
+                  <li><img src="../src/images/Twitter.svg" alt=""></li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+</body>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ashthornton/asscroll@2.0.11/build/asscroll.min.js" />
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<!-- facilities-slider -->
+<script>
+  var swiper = new Swiper(".info-slider", {
+    slidesPerView: 3,
+    spaceBetween: 40,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      }
+    },
+  });
+</script>
+<!-- guestslider -->
+<script>
+  var swiper = new Swiper(".guest", {
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script src="./main.js"></script>
+
+</html>
